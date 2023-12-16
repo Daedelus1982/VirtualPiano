@@ -6,14 +6,19 @@ body {
 }
 
 .container {
-  display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   margin-top: 200px;
 }
 
-kbd {
-  align-items: center;
+.white-keys {
+  display: flex;
+  flex-direction: row;
+}
+
+.white-keys kbd {
+  align-items: end;
   justify-content: center;
   background-color: #FFF;
   border: 2px solid black;
@@ -21,7 +26,47 @@ kbd {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 30px;
   width: 50px;
   height: 200px;
+}
+
+.black-keys {
+  display: flex;
+  flex-direction: row;
+}
+
+.black-keys kbd {
+  align-items: end;
+  justify-content: center;
+  background-color: #000;
+  border: 2px solid black;
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  width: 30px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+}
+
+#W {
+  margin-left: 37px;
+}
+
+#E {
+  margin-left: 90px;
+}
+
+#T {
+  margin-left: 197px;
+}
+
+#Y {
+  margin-left: 250px;
+}
+
+#U {
+  margin-left: 302px;
 }
